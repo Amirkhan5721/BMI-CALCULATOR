@@ -21,7 +21,6 @@ function bmiCalculator(e) {
   var bmi = weight / (height * height);
   var roundedBmi = bmi.toFixed(2);
 
-  
   //Determine BMI Category
   var category;
   if (bmi < 18.5) {
@@ -33,4 +32,9 @@ function bmiCalculator(e) {
   } else {
     category = "Obesity";
   }
+  
+  // Display Result
+  bmiResult.textContent = `Your BMI : ${roundedBmi}`;
+  bmiCategory.textContent = `Category : ${category}`;
+
 }
