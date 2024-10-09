@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>BMI Calculator</h1>
-        <form>
-            <div class="input-field">
-                <label for="weight">Weight(kg)</label>
-                <input type="number" id="weight" required>
-            </div>
-            <div class="input-field">
-                <label for="height">Height(m)</label>
-                <input type="number" id="height" required>
-            </div>
+      <h1>BMI Calculator</h1>
+      <form>
+        <div class="input-field">
+          <label for="weight">Weight(kg)</label>
+          <input type="number" id="weight" required />
+        </div>
+        <div class="input-field">
+          <label for="height">Height(m)</label>
+          <input type="number" id="height" required />
+        </div>
 
-            <button id="calculate-btn">Calculate BMI</button>
-        </form>
+        <button id="calculate-btn">Calculate BMI</button>
+      </form>
+      <div class="result-section">
+        <p id="bmi-result"></p>
+        <p id="bmi-category"></p>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
