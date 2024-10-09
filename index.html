@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>BMI Calculator</h1>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form>
+            <div class="input-field">
+                <label for="weight">Weight(kg)</label>
+                <input type="number" id="weight" required>
+            </div>
+            <div class="input-field">
+                <label for="height">Height(m)</label>
+                <input type="number" id="height" required>
+            </div>
+            <button id="calculate-btn">Calculate BMI</button>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
