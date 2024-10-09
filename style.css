@@ -32,6 +32,20 @@ button {
     color: #fff;
     padding: 10px 20px;
     border: none;
+    outline: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Styling for result section */
+.result-section {
+    margin-top: 20px;
+}
+#bmi-result {
+    font-size: 24px;
+    font-weight: bold;
+}
+#bmi-category {
+    font-size: 18px;
+    color: #666;
 }
