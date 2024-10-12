@@ -3,6 +3,9 @@ var heightInput = document.getElementById("height");
 var calculateBtn = document.getElementById("calculate-btn");
 var bmiResult = document.getElementById("bmi-result");
 var bmiCategory = document.getElementById("bmi-category");
+var weightError = document.getElementById("weight-error")
+var heightError = document.getElementById("height-error")
+
 
 // Add event Listener to calculate button
 
@@ -13,9 +16,18 @@ function bmiCalculator(e) {
   var weight = parseFloat(weightInput.value);
   var height = parseFloat(heightInput.value);
 
-  if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+
+
+  if (height === '' || isNaN(height) || height <= 0) {
     alert("Please Enter valid weight and height values");
-    return;
+    heightError.textContent = "Please provide a valid height"
+  } else {
+    heightError.textContent = '';
+  }
+  if (weight === '' || isNaN(weight) || weight <= 0) {
+    weightError.textContent = "Please provide a valid weight"
+  } else {
+    weightError.textContent = '';
   }
   //Calculate BMI
   var bmi = weight / (height * height);
